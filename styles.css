@@ -89,6 +89,28 @@ footer {
     width: 100%;
 }
 
+.menu-juegos {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+    margin-top: 2rem;
+}
+
+.juego-portada {
+    width: 150px;
+    height: 150px;
+    border-radius: 10px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+    object-fit: cover;
+}
+
+.juego-portada:hover {
+    transform: scale(1.2);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5);
+}
+
 @media (max-width: 768px) {
     .lista-juegos {
         flex-direction: column;
@@ -99,4 +121,3 @@ footer {
         flex: 1 1 100%;
     }
 }
-
