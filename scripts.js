@@ -77,3 +77,11 @@ function iniciarJuegoEstrategia() {
     ctx.fillText('Juego de Estrategia', 250, 300);
     alert("Este es un juego de estrategia en desarrollo.");
 }
+
+function cargarJuego(url) {
+    const iframe = document.getElementById('iframe-juego');
+    iframe.src = url;
+    iframe.style.display = 'block';
+    document.querySelector('.menu-juegos').style.display = 'none';
+    document.body.style.overflow = 'hidden'; // Desactiva el scroll de la página
+}
