@@ -1,25 +1,11 @@
 document.addEventListener('DOMContentLoaded', () => {
     console.log("¡Bienvenido a SuperGameHub!");
-
-    // Inicializar BlockRain
-    $('.blockrain-container').blockrain({
-        autoplay: false,
-        theme: 'retro',
-        blockWidth: 10,
-        difficulty: 'normal',
-        playText: '¡Juega BlockRain!',
-        playButtonText: 'Iniciar',
-        gameOverText: 'Fin del Juego',
-        restartButtonText: 'Reiniciar',
-        scoreText: 'Puntuación'
-    });
 });
 
 const juegosDisponibles = {
     game1: "Rompecabezas Azul",
     game2: "Escape Rojo",
-    game3: "Aventura Verde",
-    game4: "BlockRain"
+    game3: "Aventura Verde"
 };
 
 const canvas = document.getElementById('gameCanvas');
@@ -38,9 +24,6 @@ function jugar(idJuego) {
                 break;
             case 'game3':
                 iniciarJuegoEstrategia();
-                break;
-            case 'game4':
-                iniciarBlockRain();
                 break;
             default:
                 alert("El juego seleccionado no está disponible.");
@@ -93,8 +76,4 @@ function iniciarJuegoEstrategia() {
     ctx.font = '30px Arial';
     ctx.fillText('Juego de Estrategia', 250, 300);
     alert("Este es un juego de estrategia en desarrollo.");
-}
-
-function iniciarBlockRain() {
-    $('.blockrain-container').blockrain('start');
 }
