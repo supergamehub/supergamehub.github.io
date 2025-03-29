@@ -13,45 +13,15 @@
     <script src="scripts.js" defer></script>
 </head>
 <body>
-    <!-- Sección de Encabezado -->
-    <header>
-        <h1>Bienvenido a SuperGameHub</h1>
-        <p>Disfruta de una amplia variedad de juegos en un solo lugar.</p>
-    </header>
-
-    <!-- Sección de Contenido Principal -->
     <main>
-        <section id="juegos">
-            <h2>Nuestros Juegos</h2>
-            <div class="lista-juegos">
-                <div class="juego">
-                    <h3>Rompecabezas Azul</h3>
-                    <p>Un divertido y emocionante juego de rompecabezas.</p>
-                    <button onclick="jugar('game1')">Jugar Ahora</button>
-                </div>
-                <div class="juego">
-                    <h3>Escape Rojo</h3>
-                    <p>Pon a prueba tus reflejos en este juego lleno de acción.</p>
-                    <button onclick="jugar('game2')">Jugar Ahora</button>
-                </div>
-                <div class="juego">
-                    <h3>Aventura Verde</h3>
-                    <p>Desafía tus habilidades estratégicas en este juego de mesa.</p>
-                    <button onclick="jugar('game3')">Jugar Ahora</button>
-                </div>
+        <section id="menu-juegos">
+            <div class="menu-juegos">
+                <img src="https://www.htmlgames.com/uploaded/game/thumb200/mysticalforest200.webp" alt="Mystical Forest" class="juego-portada" onclick="cargarJuego('https://cdn.htmlgames.com/MysticalForest/')">
+                <img src="https://www.htmlgames.com/uploaded/game/thumb200/sudokuclassic200.webp" alt="Sudoku Classic" class="juego-portada" onclick="cargarJuego('https://cdn.htmlgames.com/SudokuClassic/')">
+                <img src="https://www.htmlgames.com/uploaded/game/thumb200/spadesspidersolitaire200.webp" alt="Spades Spider Solitaire" class="juego-portada" onclick="cargarJuego('https://cdn.htmlgames.com/SpadesSpiderSolitaire/')">
             </div>
-        </section>
-
-        <!-- Canvas para juegos en 2D -->
-        <section id="canvas-container" style="display: none;">
-            <canvas id="gameCanvas" width="800" height="600" style="border: 1px solid #fff;"></canvas>
-            <button onclick="salirJuego()">Salir del Juego</button>
+            <iframe id="iframe-juego" style="display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; border: none; z-index: 1000;"></iframe>
         </section>
     </main>
-
-    <!-- Sección de Pie de Página -->
-    <footer>
-        <p>&copy; 2023 SuperGameHub. Todos los derechos reservados.</p>
-    </footer>
 </body>
 </html>
