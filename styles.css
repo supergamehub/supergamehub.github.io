@@ -103,6 +103,19 @@ body {
     box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
 }
 
+.listing .column p {
+    font-size: 1rem;
+    font-weight: 600;
+    color: #333;
+    margin-top: 10px;
+    text-transform: capitalize;
+    transition: color 0.3s;
+}
+
+.listing .column p:hover {
+    color: #007bff;
+}
+
 .footer {
     background-color: #333;
     color: #fff;
