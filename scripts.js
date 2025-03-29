@@ -30,8 +30,7 @@ document.addEventListener("DOMContentLoaded", () => {
     }
 
     function loadGame(url) {
-        gameFrame.src = url;
-        gameFrame.style.display = "block";
+        contentArea.innerHTML = `<iframe src="${url}" frameborder="0" style="width: 100%; height: 80vh;"></iframe>`;
     }
 
     function loadCategory(category) {
