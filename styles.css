@@ -89,28 +89,6 @@ footer {
     width: 100%;
 }
 
-.blockrain-container {
-    border: 2px solid #ff6600;
-    border-radius: 8px;
-    background-color: #000;
-    margin-top: 1rem;
-}
-
-#blockrain-section button {
-    margin-top: 1rem;
-    background: #ff6600;
-    color: #fff;
-    border: none;
-    padding: 0.5rem 1rem;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background 0.3s ease;
-}
-
-#blockrain-section button:hover {
-    background: #e65c00;
-}
-
 @media (max-width: 768px) {
     .lista-juegos {
         flex-direction: column;
@@ -121,3 +99,4 @@ footer {
         flex: 1 1 100%;
     }
 }
+
